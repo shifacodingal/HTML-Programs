@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p> The text() method returns true if it finds a match, otherwise it returns false.</p>
+
+        <p> Click the button to search a string for the character " about".</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                var str = "I learnt about methods";
+                var patt = new RegExp("try");
+                var res = Patt.text(str);
+                document.getElementById("demo").innerHTML = res;
+            }
+        </script>
+    </body>
+</html>
