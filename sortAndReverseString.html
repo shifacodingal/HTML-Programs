@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h2> Sort and Reverse String </h2>
+        <p>The sort() method sorts an array alphabetically.</p>
+        <p>The reverse() method reverses the elements in an array.</p>
+        <button onclick="sortfunction()">Sort me</button>
+
+        <button onclick="reversefunction()">Reverse</button>
+        <p id = "result"></p>
+        <script> 
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+            document.getElementById("result").innerHTML = fruits;
+
+            function sortfunction(){
+                fruits.sort();
+                document.getElementById("result").innerHTML = fruits;
+            }
+
+            function reversefunction(){
+                fruits.reverse();
+                document.getElementById("result").innerHTML = fruits;
+            }
+        </script>
+    </body>
+</html>
